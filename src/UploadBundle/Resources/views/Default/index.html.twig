@@ -1,0 +1,7 @@
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ form(form, { attr:{ id:'form' } }) }}
+    <button type="submit" form="form">Save</button>
+{% endblock %}

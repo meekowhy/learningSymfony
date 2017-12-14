@@ -33,3 +33,14 @@ services:
     # AppBundle\Service\ExampleService:
     #     arguments:
     #         $someArgument: 'some_value'
+
+
+    upload.file_upload:
+        class: UploadBundle\Service\FileUploader
+        arguments: ['%upload_dir%']
+        public: true
+#
+#    UploadBundle\Service\FileUpload:
+#        arguments:
+#            $targetDir: '%upload_dir%'
+
